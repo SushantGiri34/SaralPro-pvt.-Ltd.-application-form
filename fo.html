@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            /* background-color: green; */
+        }
+
+        .welcome {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            z-index: 9999;
+            transition: transform 1s ease-in-out;
+            animation: move 1s ease-out 2s forwards;
+            z-index: 9999;
+            background-color: whitesmoke;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 110px;
+            animation: jump 1s ease-in-out infinite;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .intro h3 {
+            color: rgba(0, 0, 0, 0.527);
+            margin-top: 20px;
+        }
+
+        .load {
+            /* background-color: black; */
+            border: 4px solid darkgrey;
+            height: 50px;
+            width: 50px;
+            /* background-color: red; */
+            margin-top: 30px;
+            border-radius: 50%;
+            border-top: 4px solid rgba(0, 0, 0, 0.651);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .o {
+            text-align: center;
+            margin-top: 350px;
+            overflow: hidden;
+            font-size: 70px;
+            font-weight: 900;
+            /* position: sticky; */
+        }
+
+        #main {
+            padding: 15px 20px;
+            /* max-width: 900px;   */
+            /* margin: 0 auto; */
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .main h4 {
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        .main p {
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #data {
+            padding: 10px 20px;
+        }
+
+        .table1 {
+            height: 100%;
+            width: 100%;
+            padding: 20px 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            /* border for visibility */
+            padding: 15px 20px;
+            /* vertical 15px, horizontal 20px */
+        }
+
+        table,
+        input {
+            width: 100%;
+            height: 35px;
+            padding-left: 15px;
+        }
+
+        #eduTable th,
+        #eduTable td {
+            padding: 10px;
+            border: 1px solid black;
+            font-family: Arial, sans-serif;
+        }
+
+        #eduTable input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .final span {
+            margin-top: 30px;
+            display: flex;
+            /* gap: 5px; space between Yes/No */
+            /* align-items: center; */
+        }
+
+        .final label {
+            font-weight: bold;
+            /* margin-left: 1px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome">
+        <div class="intro">
+            <div class="logo"><img
+                    src="https://imgs.search.brave.com/xsUZHTkfByXCf7bsYDfYDbdmRpIQJrL7fbb-1mkiXjM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYXJh/bC5wcm8vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMDcvU2Fy/YWwuc3Zn"
+                    alt="logo" height="123rem">
+            </div>
+            <div class="etc"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <h3>Hold On Please Wait</h3>
+                <div class="load"></div>
+            </div>
+            <h1 class="o"> Welcome To Application Form</h1>
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <section id="main">
+            <h4 style="font-size: 28px;"> <strong> SaralPro Technologies Pvt. Ltd. </strong></h4>
+            <p>
+                <i class="ri-mail-line"></i> info@saralpro.com &nbsp www.saralpro.com <br>
+                <i class="ri-phone-line"></i> +91 ********** &nbsp +91 ********* <br>
+                &nbsp &nbsp &nbsp +91 ********** +91 **********
+            </p>
+        </section>
+    </div>
+    <hr>
+    <h3 style="font-size: 25px; font-weight: 400; margin-top: 25px; text-align: center; text-decoration:overline;">
+        Application Form </h3>
+    <div class="info" style="padding: 10px 20px;">
+        <h4>Date: <input type="date" style="cursor: pointer;"></h4>
+        <h4> Position Applied : <input type="email" placeholder="Software developer "></h4>
+    </div>
+    <div id="data">
+        <h3 style="margin-top: 30px;">PERSONAL DETAILS:</h3>
+
+        <form action="insert.php" method="POST">
+            <table border="1" class="table1">
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="full_name" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <select name="gender" style="cursor: pointer;" required>
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td>
+                        <select name="marital_status" style="cursor: pointer;" required>
+                            <option value="">Select</option>
+                            <option value="Unmarried">Unmarried</option>
+                            <option value="Married">Married</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td><input type="text" name="nationality"></td>
+                </tr>
+                <tr>
+                    <td>Religion</td>
+                    <td><input type="text" name="religion"></td>
+                </tr>
+            </table>
+            <div style="text-align: end; margin: 10px;">
+                <button type="submit" style="padding: 10px; border-radius: 7px;  cursor: pointer;">Save</button>
+            </div>
+        </form>
+
+        <!-- form 2 -->
+        <h3 style="margin-top: 30px;">FAMILY DETAILS:</h3>
+
+        <form action="insert.php" method="POST">
+            <table border="1" class="table1">
+                <tr>
+                    <td>Father's Name</td>
+                    <td><input type="text" name="Father_name" required></td>
+                </tr>
+                <tr>
+                    <td>Father's Occupation</td>
+                    <td><input type="text" name="Father_Occupation" required></td>
+                </tr>
+                <tr>
+                    <td>Father's Contact Number</td>
+                    <td><input type="number" name="Contact_number" required></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name</td>
+                    <td><input type="text" name="Mother_name" required></td>
+                </tr>
+                <tr>
+                    <td>Spouse Name</td>
+                    <td><input type="text" name="Spouse" required></td>
+                </tr>
+                <tr>
+                    <td>Spouse Occupation</td>
+                    <td><input type="text" name="Spouse_occupation" required></td>
+                </tr>
+                <tr>
+                    <td>Children Details</td>
+                    <td><input type="text" name="Children_details" required></td>
+                </tr>
+                <tr>
+                    <td>Other Family Member's</td>
+                    <td><input type="text" name="Other_family_member" required></td>
+                </tr>
+            </table>
+            <div style="text-align: end; margin: 10px;">
+                <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+            </div>
+        </form>
+
+        <!-- form 3 -->
+        <h3 style="margin-top: 30px;">CERTIFICATION DETAILS:</h3>
+
+        <form action="insert.php" method="POST" id="certForm">
+            <table border="1" class="table1" id="certTable">
+                <tr>
+                    <td>1.</td>
+                    <td><input type="text" name="certificate[]" required></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td><input type="text" name="certificate[]" required></td>
+                </tr>
+            </table>
+            <div style="margin: 10px;">
+                <button type="button" id="addRowBtn">Add More</button>
+            </div>
+            <div style="text-align: end; margin: 10px;">
+                <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+            </div>
+        </form>
+
+        <!-- form 4 -->
+        <h3 style="margin-top: 30px;">CORRESPONDENCE DETAILS:</h3>
+
+        <form action="insert.php" method="POST">
+            <table border="1" class="table1">
+                <tr>
+                    <td>Permanent Address with City and State <br>
+                        (in block letters) </td>
+                    <td><input type="text" name="" required></td>
+                </tr>
+                <tr>
+                    <td>PIN Code</td>
+                    <td><input type="number" name="" required></td>
+                </tr>
+                <tr>
+                    <td>Personal Contact Details</td>
+                    <td><input type="number" name="" required></td>
+                </tr>
+                <tr>
+                    <td>Phone No</td>
+                    <td><input type="number" name="" required></td>
+                </tr>
+                <tr>
+                    <td>E-Mail </td>
+                    <td><input type="text" name="" required></td>
+                </tr>
+            </table>
+            <div style="text-align: end; margin: 10px;">
+                <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+            </div>
+        </form>
+
+        <!-- form 4 -->
+        <h3 style="margin-top: 30px;">
+            <button type="button" id="toggleEdu" style="cursor:pointer; padding:5px 10px;">Academic Details ⯆</button>
+        </h3>
+
+        <div id="eduSection" style="display:none; margin-top:10px;">
+            <form id="eduForm">
+                <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse;"
+                    id="eduTable">
+                    <tr>
+                        <th>Qualification</th>
+                        <th>College / School</th>
+                        <th>Board / University</th>
+                        <th>Course Name</th>
+                        <th>Year of Passing</th>
+                        <th>Division / Marks</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="qualification[]" required></td>
+                        <td><input type="text" name="college[]" required></td>
+                        <td><input type="text" name="board[]" required></td>
+                        <td><input type="text" name="course[]" required></td>
+                        <td><input type="number" name="year[]" required></td>
+                        <td><input type="text" name="marks[]" required></td>
+                    </tr>
+                </table>
+                <div style="margin:10px;">
+                    <button type="button" id="addEduRow">Add More</button>
+                </div>
+                <div style="text-align: end; margin: 10px;">
+                    <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- SKILLS SECTION -->
+        <h3 style="margin-top: 30px;">Skills (Add Multiple)</h3>
+        <table id="skillsTable">
+            <tr>
+                <th>Skill</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="skills[]" required></td>
+                <td><button type="button" class="removeBtn">Remove</button></td>
+            </tr>
+        </table>
+        <button type="button" id="addSkillBtn">Add Skill</button>
+        <div style="text-align: end; margin: 10px;">
+            <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+        </div>
+
+        <!-- VOCATIONAL / EXPERIENCE -->
+        <h3 style="margin-top: 30px;">Vocational Training / Experience</h3>
+        <table id="expTable">
+            <tr>
+                <th>Organization & Location</th>
+                <th>From (Month, Year)</th>
+                <th>To (Month, Year)</th>
+                <th>Designation</th>
+                <th>Reason of Leaving</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="org[]" required></td>
+                <td><input type="text" name="from[]" required></td>
+                <td><input type="text" name="to[]" required></td>
+                <td><input type="text" name="designation[]" required></td>
+                <td><input type="text" name="reason[]" required></td>
+                <td><button type="button" class="removeBtn">Remove</button></td>
+            </tr>
+        </table>
+        <button type="button" id="addExpBtn">Add Row</button>
+        <div style="text-align: end; margin: 10px;">
+            <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+        </div>
+
+        <!-- QUERY / ABOUT -->
+        <h3 style="margin-top: 30px;">About Yourself / Queries</h3>
+        <table id="queryTable">
+            <tr>
+                <th>Describe Yourself / Query (If Any)</th>
+            </tr>
+            <tr>
+                <td><textarea name="about[]" rows="4" placeholder="Write here... "
+                        style="width: 100%; overflow: scroll;" required></textarea></td>
+            </tr>
+        </table>
+        <button type="button" id="addQueryBtn" style="padding: 8px; border-radius: 4px; cursor: pointer;">Add
+            Another</button>
+        <div style="text-align: end; margin: 10px;">
+            <button type="submit" style="padding: 10px; border-radius: 7px; cursor: pointer;">Save</button>
+        </div>
+
+        <!-- final -->
+        <div class="final">
+            <h3>Ready to move anywhere (yes/no):</h3>
+            <span>
+                <label for="locate_yes">Yes</label>
+                <input type="radio" name="locate" id="locate_yes" value="yes" required>
+                <label for="locate_no">No</label>
+                <input type="radio" name="locate" id="locate_no" value="no">
+
+            </span>
+
+            <span>
+                <h3>Notice Period (If Any): </h3>
+                <input type="text" class="join">
+            </span>
+            <span>
+                <h3>Preferred Location: </h3>
+                <input type="text" class="join">
+            </span>
+        </div>
+
+        <h5 style="display: flex; align-items: flex-end; justify-content: flex-end; margin-top: 100px;">
+            <p>Date: <input type="date" style="height: 50px; width: 150px;"></p>
+        </h5>
+
+    </div>
+    <script>
+        let addBtn = document.getElementById('addRowBtn');
+        let table = document.getElementById('certTable');
+
+        addBtn.addEventListener('click', () => {
+            let rowCount = table.rows.length + 1; // new row number
+            let row = table.insertRow(); // create new row
+
+            // Column 1 → number
+            let cell1 = row.insertCell(0);
+            cell1.textContent = rowCount + ".";
+
+            // Column 2 → input
+            let cell2 = row.insertCell(1);
+            let input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'certificate[]';
+            input.required = true;
+            cell2.appendChild(input);
+        });
+
+        // education 
+        // Collapsible
+        let toggleBtn = document.getElementById('toggleEdu');
+        let eduSection = document.getElementById('eduSection');
+
+        toggleBtn.addEventListener('click', () => {
+            if (eduSection.style.display === "none") {
+                eduSection.style.display = "block";
+                toggleBtn.textContent = "Academic Details ⯅";
+            } else {
+                eduSection.style.display = "none";
+                toggleBtn.textContent = "Academic Details ⯆";
+            }
+        });
+
+        // Add Row Dynamically
+        let addEduBtn = document.getElementById('addEduRow');
+        let eduTable = document.getElementById('eduTable');
+
+        addEduBtn.addEventListener('click', () => {
+            let row = eduTable.insertRow();
+
+            for (let i = 0; i < 6; i++) {
+                let cell = row.insertCell(i);
+                let input = document.createElement('input');
+                input.type = (i === 4) ? 'number' : 'text'; // Year as number
+                input.name = ['qualification[]', 'college[]', 'board[]', 'course[]', 'year[]', 'marks[]'][i];
+                input.required = true;
+                cell.appendChild(input);
+            }
+        });
+
+        // SKILLS SECTION
+        let skillsTable = document.getElementById('skillsTable');
+        document.getElementById('addSkillBtn').addEventListener('click', () => {
+            let row = skillsTable.insertRow();
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            cell1.innerHTML = '<input type="text" name="skills[]" required>';
+            cell2.innerHTML = '<button type="button" class="removeBtn">Remove</button>';
+        });
+        skillsTable.addEventListener('click', e => {
+            if (e.target.classList.contains('removeBtn')) {
+                let row = e.target.parentElement.parentElement;
+                skillsTable.deleteRow(row.rowIndex);
+            }
+        });
+
+        // EXPERIENCE SECTION
+        let expTable = document.getElementById('expTable');
+        document.getElementById('addExpBtn').addEventListener('click', () => {
+            let row = expTable.insertRow();
+            for (let i = 0; i < 5; i++) {
+                let cell = row.insertCell(i);
+                cell.innerHTML = '<input type="text" name="' + ['org[]', 'from[]', 'to[]', 'designation[]', 'reason[]'][i] + '" required>';
+            }
+            let actionCell = row.insertCell(5);
+            actionCell.innerHTML = '<button type="button" class="removeBtn">Remove</button>';
+        });
+        expTable.addEventListener('click', e => {
+            if (e.target.classList.contains('removeBtn')) {
+                let row = e.target.parentElement.parentElement;
+                expTable.deleteRow(row.rowIndex);
+            }
+        });
+
+        // QUERY / ABOUT
+        let queryTable = document.getElementById('queryTable');
+        document.getElementById('addQueryBtn').addEventListener('click', () => {
+            let row = queryTable.insertRow();
+            let cell = row.insertCell(0);
+            cell.innerHTML = '<textarea name="about[]" rows="4" placeholder="Write here..." required></textarea>';
+        });
+    </script>
+</body>
+
+
+</html>
