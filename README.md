@@ -1,4 +1,4 @@
-﻿# SaralPro-pvt.-Ltd.-application-form
+﻿# SaralPro-pvt-Ltd.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/username/saralpro-application-form)
 ![GitHub language count](https://img.shields.io/github/languages/count/username/saralpro-application-form)
