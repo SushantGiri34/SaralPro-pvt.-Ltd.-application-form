@@ -37,8 +37,16 @@ It allows candidates to submit:
 
 ## 📸 Screenshots / Demo
 
-### Main Form
-![Main Form](https://via.placeholder.com/800x400?text=Form+Preview)
+### Main Form <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cdb1949d-ca1b-4c1b-9a5f-793000c7a3eb" />
+
+![Main Form](https://via.placeholder.com/800x400?text=Form+Preview)<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a565ce2b-cd2e-40b5-8eeb-385540dda97b" />
+![Main Form](https://via.placeholder.com/800x400?text=Form+Preview)<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/61b420dc-3a94-4d63-a2ed-d7bb563d804c" />
+
+
+![Main Form](https://via.placeholder.com/800x400?text=Form+Preview)<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d6b6f3f3-c433-473f-906a-3d8bfd7dea47" />
+![Main Form](https://via.placeholder.com/800x400?text=Form+Preview)<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a3a6f3dd-3e08-46dd-9ea4-b015837753af" />
+
+
 
 ### Academic / Skills Section (Collapsible)
 ![Collapsible Section](https://via.placeholder.com/800x400?text=Collapsible+Sections)
@@ -62,3 +70,42 @@ saralpro-application-form/
 │    └── js/
 │         └── script.js  # JS for dynamic rows, collapsibles
 ├── README.md
+
+```
+How It Works (Frontend Prototype)
+
+Open index.html in browser
+
+Fill out Personal / Academic / Skills / Experience sections
+
+Use “Add More” buttons to add multiple entries dynamically
+
+Collapsible sections keep the form neat and organized
+
+Backend integration with PHP + MySQL will handle actual data saving soon.
+
+🛠 Technologies Used
+
+Frontend: HTML5, Bootstrap 5, CSS3, JavaScript
+
+Design: PDF-style tables, responsive layout
+
+Tools: VS Code, Live Server
+
+💡 Future Enhancements
+
+PHP + MySQL Backend → Save, Update, Delete entries
+
+PDF Export → Download filled form
+
+Authentication → Admin panel for managing submissions
+
+Enhanced Mobile UI
+
+📌 Author
+
+Sushant Giri
+
+GitHub: github.com/sushantgiri34
+
+LinkedIn: linkedin.com/in/sushant-giri
