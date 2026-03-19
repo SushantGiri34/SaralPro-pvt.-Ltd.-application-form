@@ -4,18 +4,61 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/username/saralpro-application-form)
 ![GitHub forks](https://img.shields.io/github/forks/username/saralpro-application-form?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/username/saralpro-application-form?style=social)
+# SaralPro Application Form
+
+![Project Banner](https://via.placeholder.com/900x200?text=SaralPro+Application+Form)
+
+---
+
 ## 🚀 Project Overview
 
-**SaralPro Application Form** is a **dynamic, interactive PDF-style job application form** built using **HTML, CSS, JavaScript, PHP, and MySQL**.  
-It allows candidates to submit **personal details, academic background, skills, vocational experience, and queries** through a neat table layout.  
+**SaralPro Application Form** is a **dynamic, responsive, PDF-style application form** built using **HTML, CSS (Bootstrap), and JavaScript**.  
+It allows candidates to submit:
 
-### ✅ Features
+- Personal Details
+- Academic Background
+- Skills
+- Vocational Experience
+- Queries / About Yourself
 
-- **Skills Table** → Add / Remove multiple skills dynamically
-- **Academic Details Table** → Add multiple education entries
-- **Vocational / Experience Table** → Add multiple experience entries
-- **About Yourself / Queries** → Dynamic text area input
-- **Collapsible Sections** → Expand / Collapse for Education and Skills
-- **PDF-style Layout** → Professional and clean design
-- **PHP + MySQL Backend** → Save, View, Update, Delete entries
-- **Responsive Layout** → Works on desktop and mobile
+> ⚠️ Backend / PHP + MySQL integration will be added soon.
+
+---
+
+## 🎯 Features
+
+- **Bootstrap 5** → Fully responsive design
+- **Dynamic Tables** → Add multiple rows for Skills, Education, Experience
+- **Collapsible Sections** → Education and Skills can expand/collapse
+- **Clean PDF-style layout**
+- **Frontend-only prototype** (Backend coming soon)
+
+---
+
+## 📸 Screenshots / Demo
+
+### Main Form
+![Main Form](https://via.placeholder.com/800x400?text=Form+Preview)
+
+### Academic / Skills Section (Collapsible)
+![Collapsible Section](https://via.placeholder.com/800x400?text=Collapsible+Sections)
+
+### Add More Rows Feature
+![Add Rows Demo](https://via.placeholder.com/800x400?text=Add+Rows+Feature)
+
+> 💡 **Tip:** Replace placeholders with actual screenshots or GIFs when available.
+
+---
+
+## 📂 Project Structure
+
+```text
+saralpro-application-form/
+│
+├── index.html           # Main frontend form
+├── assets/
+│    ├── css/
+│    │    └── style.css  # Custom styles + Bootstrap
+│    └── js/
+│         └── script.js  # JS for dynamic rows, collapsibles
+├── README.md
