@@ -48,14 +48,6 @@ It allows candidates to submit:
 
 
 
-### Academic / Skills Section (Collapsible)
-![Collapsible Section](https://via.placeholder.com/800x400?text=Collapsible+Sections)
-
-### Add More Rows Feature
-![Add Rows Demo](https://via.placeholder.com/800x400?text=Add+Rows+Feature)
-
-> 💡 **Tip:** Replace placeholders with actual screenshots or GIFs when available.
-
 ---
 
 ## 📂 Project Structure
