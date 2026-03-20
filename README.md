@@ -64,40 +64,44 @@ saralpro-application-form/
 ├── README.md
 
 ```
-How It Works (Frontend Prototype)
+#How It Works (Frontend Prototype)
 
-Open index.html in browser
+-- Open index.html in browser
 
-Fill out Personal / Academic / Skills / Experience sections
+-- Fill out Personal / Academic / Skills / Experience sections
 
-Use “Add More” buttons to add multiple entries dynamically
+-- Use “Add More” buttons to add multiple entries dynamically
 
-Collapsible sections keep the form neat and organized
+-- Collapsible sections keep the form neat and organized
 
-Backend integration with PHP + MySQL will handle actual data saving soon.
+## Backend integration with PHP + MySQL will handle actual data saving soon.
 
-🛠 Technologies Used
+### 🛠 Technologies Used
 
-Frontend: HTML5, Bootstrap 5, CSS3, JavaScript
+#Frontend: 
+--HTML5, Bootstrap 5, CSS3, JavaScript
 
-Design: PDF-style tables, responsive layout
+#Design: 
+--PDF-style tables, responsive layout
 
-Tools: VS Code, Live Server
+#Tools: 
+--VS Code, Live Server
 
-💡 Future Enhancements
+##💡 Future Enhancements
 
-PHP + MySQL Backend → Save, Update, Delete entries
+#PHP + MySQL Backend → Save, Update, Delete entries
 
-PDF Export → Download filled form
+-- PDF Export → Download filled form
 
-Authentication → Admin panel for managing submissions
+#Authentication → 
+-- Admin panel for managing submissions
 
-Enhanced Mobile UI
+#Enhanced Mobile UI
 
-📌 Author
+#📌 Author
 
-Sushant Giri
+####Sushant Giri
 
-GitHub: github.com/sushantgiri34
+#GitHub: github.com/sushantgiri34
 
 LinkedIn: linkedin.com/in/sushant-giri
